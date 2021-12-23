@@ -1,0 +1,771 @@
+[{
+  "_id": {
+    "$oid": "61c2e632a8cec44cb0918ffc"
+  },
+  "nameProduct": "LG G2",
+  "createdAt": "2021 / 12 / 22",
+  "price": 59,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e6470c779abd3c8aa7db"
+  },
+  "nameProduct": "LG G3",
+  "createdAt": "2021 / 12 / 22",
+  "price": 54,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e649c2baa024ce3b4a56"
+  },
+  "nameProduct": "LG G4",
+  "createdAt": "2021 / 12 / 22",
+  "price": 59,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e64b19fcb6feb7d55a1f"
+  },
+  "nameProduct": "LG G5",
+  "createdAt": "2021 / 12 / 22",
+  "price": 69,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e64c53ad3803872bc14c"
+  },
+  "nameProduct": "LG G6",
+  "createdAt": "2021 / 12 / 22",
+  "price": 59,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e658c2d9b680621a5fbb"
+  },
+  "nameProduct": "Samsung Galaxy S4",
+  "createdAt": "2021 / 12 / 22",
+  "price": 29,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e6593125bf6d4031c633"
+  },
+  "nameProduct": "Samsung Galaxy S5",
+  "createdAt": "2021 / 12 / 22",
+  "price": 59,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e65b6d3982ba322a827c"
+  },
+  "nameProduct": "Samsung Galaxy S6",
+  "createdAt": "2021 / 12 / 22",
+  "price": 69,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e65d1687af1b10ae4c29"
+  },
+  "nameProduct": "Samsung Galaxy S7",
+  "createdAt": "2021 / 12 / 22",
+  "price": 79,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e660e4b8f562be63968d"
+  },
+  "nameProduct": "Samsung Galaxy S20",
+  "createdAt": "2021 / 12 / 22",
+  "price": 599,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e6652134153db62e9553"
+  },
+  "nameProduct": "Samsung Galaxy S10",
+  "createdAt": "2021 / 12 / 22",
+  "price": 299,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e66b4344ddfbfa1e5a64"
+  },
+  "nameProduct": "Samsung Galaxy Note 10",
+  "createdAt": "2021 / 12 / 22",
+  "price": 59,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e66e6f3572243d53b1a6"
+  },
+  "nameProduct": "Samsung Galaxy Note 20",
+  "createdAt": "2021 / 12 / 22",
+  "price": 799,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e67f16806bb7ab065433"
+  },
+  "nameProduct": "Apple Iphone 5s",
+  "createdAt": "2021 / 12 / 22",
+  "price": 59,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e6826f8cf21ee5c9684a"
+  },
+  "nameProduct": "Apple Iphone se",
+  "createdAt": "2021 / 12 / 22",
+  "price": 59,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e68508f577694509747a"
+  },
+  "nameProduct": "Apple Iphone se2020",
+  "createdAt": "2021 / 12 / 22",
+  "price": 59,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e68d71ee78040cd5a36c"
+  },
+  "nameProduct": "Apple Iphone X",
+  "createdAt": "2021 / 12 / 22",
+  "price": 59,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e68f70d7318be7878193"
+  },
+  "nameProduct": "Apple Iphone 12",
+  "createdAt": "2021 / 12 / 22",
+  "price": 59,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e691e651315e25dd223f"
+  },
+  "nameProduct": "Apple Iphone 13",
+  "createdAt": "2021 / 12 / 22",
+  "price": 999,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e6bb464af17ac3640c3d"
+  },
+  "nameProduct": "Sony Z5",
+  "createdAt": "2021 / 12 / 22",
+  "price": 59,
+  "priceCent": 99,
+  "category": "mobile",
+  "imgProduct": "Mobile.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e74fda6eabb1c902a695"
+  },
+  "nameProduct": "Apple Macbook m1",
+  "createdAt": "2021 / 12 / 22",
+  "price": 999,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e763c818963e4f592bff"
+  },
+  "nameProduct": "Apple Macbook m1 Pro",
+  "createdAt": "2021 / 12 / 22",
+  "price": 1999,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e76aee50917643bcea36"
+  },
+  "nameProduct": "Apple Macbook m1 Max",
+  "createdAt": "2021 / 12 / 22",
+  "price": 2999,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e778626c5d1b7a16b9b1"
+  },
+  "nameProduct": "Apple Macbook 2019",
+  "createdAt": "2021 / 12 / 22",
+  "price": 1099,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e787272e1dadf6e46f17"
+  },
+  "nameProduct": "ASUS K450",
+  "createdAt": "2021 / 12 / 22",
+  "price": 599,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e7926dfab867544d32de"
+  },
+  "nameProduct": "ASUS X340",
+  "createdAt": "2021 / 12 / 22",
+  "price": 699,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e79e38db5016b0c9a4b2"
+  },
+  "nameProduct": "ASUS G5000",
+  "createdAt": "2021 / 12 / 22",
+  "price": 1499,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e7b13accae472b747b4c"
+  },
+  "nameProduct": "MSI GX5 Turbo",
+  "createdAt": "2021 / 12 / 22",
+  "price": 3999,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e7b8d1b98a7ed794dccb"
+  },
+  "nameProduct": "MSI GX8 Turbo",
+  "createdAt": "2021 / 12 / 22",
+  "price": 4999,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e7e95d9fbc90c77242fd"
+  },
+  "nameProduct": "Alien X 102",
+  "createdAt": "2021 / 12 / 22",
+  "price": 1999,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e80c6acbbab1ae2254dc"
+  },
+  "nameProduct": "LG gram",
+  "createdAt": "2021 / 12 / 22",
+  "price": 799,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e815a6be28f4a1f9e73f"
+  },
+  "nameProduct": "LG gram 2",
+  "createdAt": "2021 / 12 / 22",
+  "price": 899,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e81a6bca70011df4ade3"
+  },
+  "nameProduct": "LG gram 3",
+  "createdAt": "2021 / 12 / 22",
+  "price": 999,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e831d3c61c7cd8b51eb5"
+  },
+  "nameProduct": "LG chromeBook mini",
+  "createdAt": "2021 / 12 / 22",
+  "price": 399,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e836eeab31a38da7dc1b"
+  },
+  "nameProduct": "LG chromeBook max",
+  "createdAt": "2021 / 12 / 22",
+  "price": 599,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e83e543d4c0ada51d475"
+  },
+  "nameProduct": "LG chromeBook proMax",
+  "createdAt": "2021 / 12 / 22",
+  "price": 699,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e8546eb27fc5cb8c5907"
+  },
+  "nameProduct": "Microsoft surface 3",
+  "createdAt": "2021 / 12 / 22",
+  "price": 1999,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e85d904d6f8023525734"
+  },
+  "nameProduct": "Microsoft surface 3 x",
+  "createdAt": "2021 / 12 / 22",
+  "price": 2099,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e865546bc52610072262"
+  },
+  "nameProduct": "Microsoft surface 4",
+  "createdAt": "2021 / 12 / 22",
+  "price": 3999,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e877fab98af8a827294f"
+  },
+  "nameProduct": "ChromeBook e33",
+  "createdAt": "2021 / 12 / 22",
+  "price": 199,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c2e87dd8729fb102d89d2d"
+  },
+  "nameProduct": "ChromeBook x44",
+  "createdAt": "2021 / 12 / 22",
+  "price": 299,
+  "priceCent": 99,
+  "category": "laptop",
+  "imgProduct": "Laptop.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b27fd8f31b3aa446aa40"
+  },
+  "nameProduct": "Panasonic Lumix DC-GH5A",
+  "createdAt": "2021 / 12 / 23",
+  "price": 1999,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b2a78ecbee5a74ecc50d"
+  },
+  "nameProduct": "Panasonic Lumix X",
+  "createdAt": "2021 / 12 / 23",
+  "price": 1099,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b2b4b7f4474dde871578"
+  },
+  "nameProduct": "Panasonic Ztc2",
+  "createdAt": "2021 / 12 / 23",
+  "price": 699,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b2c82ada82b4eb109cfb"
+  },
+  "nameProduct": "Fujifilm Instax Mini 9",
+  "createdAt": "2021 / 12 / 23",
+  "price": 399,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b2d07df63c61fcffdb50"
+  },
+  "nameProduct": "Fujifilm Instax Mini 3",
+  "createdAt": "2021 / 12 / 23",
+  "price": 199,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b2d69c824109d5d1969c"
+  },
+  "nameProduct": "Fujifilm Instax Mini 2",
+  "createdAt": "2021 / 12 / 23",
+  "price": 89,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b2e13ff3e17ccfe59b5d"
+  },
+  "nameProduct": "Fujifilm No",
+  "createdAt": "2021 / 12 / 23",
+  "price": 799,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b2e8d3d20384aa6b1c44"
+  },
+  "nameProduct": "Fujifilm No5",
+  "createdAt": "2021 / 12 / 23",
+  "price": 999,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b2fa36c54b065788b14b"
+  },
+  "nameProduct": "Canon PowerShot",
+  "createdAt": "2021 / 12 / 23",
+  "price": 499,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b300d224f81625fe8b73"
+  },
+  "nameProduct": "Canon PowerShot X2",
+  "createdAt": "2021 / 12 / 23",
+  "price": 399,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b305d7d7d25277382269"
+  },
+  "nameProduct": "Canon PowerShot X3",
+  "createdAt": "2021 / 12 / 23",
+  "price": 599,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b30f1c5cc9bfe3897dd3"
+  },
+  "nameProduct": "Canon PowerShot R2",
+  "createdAt": "2021 / 12 / 23",
+  "price": 299,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b317b02c6c58c9ad2e0b"
+  },
+  "nameProduct": "Canon R2",
+  "createdAt": "2021 / 12 / 23",
+  "price": 29,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b31f2fd64eead7183493"
+  },
+  "nameProduct": "Canon Re3",
+  "createdAt": "2021 / 12 / 23",
+  "price": 10,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b329d4e2efed6da8a139"
+  },
+  "nameProduct": "Canon X33",
+  "createdAt": "2021 / 12 / 23",
+  "price": 90,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b332ad8c2e7de5d12547"
+  },
+  "nameProduct": "Canon X33 pro",
+  "createdAt": "2021 / 12 / 23",
+  "price": 99,
+  "priceCent": 99,
+  "category": "camera",
+  "imgProduct": "Camera.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b38b4fa85008d1657a99"
+  },
+  "nameProduct": "Xbox360",
+  "createdAt": "2021 / 12 / 23",
+  "price": 199,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b396d525782561d74fa3"
+  },
+  "nameProduct": "Xbox360 slim",
+  "createdAt": "2021 / 12 / 23",
+  "price": 249,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b3a674c76e87118a4ad3"
+  },
+  "nameProduct": "Xbox One",
+  "createdAt": "2021 / 12 / 23",
+  "price": 299,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b3ade260ed05f1d731ac"
+  },
+  "nameProduct": "Xbox One X",
+  "createdAt": "2021 / 12 / 23",
+  "price": 399,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b3b8daa80f52a1a0c86e"
+  },
+  "nameProduct": "Xbox One X 1T",
+  "createdAt": "2021 / 12 / 23",
+  "price": 499,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b3cb1a10d60a44e752bc"
+  },
+  "nameProduct": "Xbox Classic",
+  "createdAt": "2021 / 12 / 23",
+  "price": 599,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b3d7106f280ee14213ac"
+  },
+  "nameProduct": "Xbox Classic with 100 games",
+  "createdAt": "2021 / 12 / 23",
+  "price": 799,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b40d9f002a1c8ca025d4"
+  },
+  "nameProduct": "Play Station 2",
+  "createdAt": "2021 / 12 / 23",
+  "price": 89,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b411f8cd363a94e78d8c"
+  },
+  "nameProduct": "Play Station 3",
+  "createdAt": "2021 / 12 / 23",
+  "price": 199,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b41b724e8079e7543015"
+  },
+  "nameProduct": "Play Station 3 slim",
+  "createdAt": "2021 / 12 / 23",
+  "price": 269,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b4211225e0a7236f7a7e"
+  },
+  "nameProduct": "Play Station 4",
+  "createdAt": "2021 / 12 / 23",
+  "price": 299,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b4269f422617e40ad062"
+  },
+  "nameProduct": "Play Station 5",
+  "createdAt": "2021 / 12 / 23",
+  "price": 499,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c4b42e1639a94b98dee8d7"
+  },
+  "nameProduct": "Play Station",
+  "createdAt": "2021 / 12 / 23",
+  "price": 299,
+  "priceCent": 99,
+  "category": "game-console",
+  "imgProduct": "ConsoleGame.jpg",
+  "__v": 0
+}]

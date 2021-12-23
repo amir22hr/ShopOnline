@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "61c4a67b6e16d8179cd48da5"
+  },
+  "name": "amir hossein rg",
+  "email": "janoka1371@xtrempro.com",
+  "password": "$2b$10$.TwwdglSiX8fhv4QmJCcKuWV.d2c8s82PWeJUD8WZLl.ImNdVghVO",
+  "joinDate": "2021/12/23",
+  "token": "61dcddfe3e58508b5eaef83e226e74d9919c174ad7a98db2d486bc8011613879",
+  "valid": true,
+  "carts": [],
+  "__v": 0
+}]

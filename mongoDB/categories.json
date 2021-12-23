@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "61c4553f7cf9d3b6bb00f9e6"
+  },
+  "name": "Mobile",
+  "cate": "mobile",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c45551a13a48d913ee6e5d"
+  },
+  "name": "Laptop",
+  "cate": "laptop",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c45562ad91428e72e980f2"
+  },
+  "name": "Camera",
+  "cate": "camera",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c45574e212bfcfaffa4241"
+  },
+  "name": "Game Console",
+  "cate": "game-console",
+  "__v": 0
+}]
