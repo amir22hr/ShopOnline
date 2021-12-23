@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('../layout/head.ejs') %> 
+		<style>
+			.uk-container-small {
+				max-width: 1020px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--HEADER-->
+		<header class="uk-box-shadow-small" style="background-color: white">
+			<div class="uk-container uk-container-expand">
+				<nav class="uk-navbar" id="navbar" data-uk-navbar>
+					<div class="uk-navbar-left">
+						<a class="uk-navbar-item uk-logo" href="#"><%= product.nameProduct %></a>
+					</div>
+					
+					<div class="uk-navbar-right">
+						<ul class="uk-navbar-nav uk-visible@m">
+							<li class="uk-active"><a href="<%= rou.main %>">Home</a></li>
+							<% if(exist != ""){ %>
+							<li><a href="<%= rou.delete %>?id=<%= product._id.toString() %>"><span class="uk-text-danger" uk-icon="trash"></span></a></li>
+							<% } %> 
+						</ul>
+						<div class="uk-navbar-item">
+							<% if(exist == ""){ %> 
+							<a href="<%= rou.add %>?id=<%= user ? product._id.toString() : " null" %>" class="uk-button uk-button-primary uk-visible@m">Add to cart</a>
+							<% }else{ %>
+							<a disabled class="uk-button uk-button-secondary uk-visible@m">Available in cart</a>
+							<% } %> 
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--/HEADER-->
+		
+		<!--AUTHOR-->
+		<section class="uk-section uk-section-muted uk-padding-remove-bottom">
+			<div class="uk-container uk-container-small">
+				<header class="uk-text-center">
+					<h1 class="uk-heading-primary">$ <%= product.price %>.<%= product.priceCent %></h1>
+					<p class="uk-width-3-5 uk-margin-auto">
+						Our Product is the easiest way for teams to track their works progress. Our advance plans give you more tools to get the job done.
+					</p>
+				</header>
+
+				<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+					<ul class="uk-slider-items uk-grid">
+						<li class="uk-width-3-4">
+							<div class="uk-panel">
+								<img src="<%= rou.img + product.imgProduct %> " alt="">
+							</div>
+						</li>
+					</ul>
+				
+					<!-- <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a> -->
+				
+				</div>
+		
+		
+		<!-- JS FILES -->
+		<%- include('../layout/script.ejs') %> 
+		
+	</body>
+</html>

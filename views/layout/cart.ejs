@@ -1,0 +1,19 @@
+<% if(user) {%>
+    <ul class="uk-switcher uk-margin">
+        <li class="uk-height-small uk-overflow-auto">
+            <% productsCart.forEach(item=> { %> 
+                <div class="message">
+                    <b><a href="<%= rou.product + item._id.toString() %>"><%= item.nameProduct %></a> - $<%= item.price %>.<%= item.priceCent %> </b> <a href="<%= rou.delete %>?id=<%= item._id.toString() %>"><span class="uk-text-danger" uk-icon="trash"></span></a>
+                </div>
+                <% }) %> 
+        </li>
+    </ul>
+    <% }else{ %>
+        <ul class="uk-switcher uk-margin">
+            <li class="uk-height-small uk-overflow-auto">
+                <div class="message">
+                    <b>Empty</b>
+                </div>
+            </li>
+        </ul>
+        <% } %>

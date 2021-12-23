@@ -1,0 +1,15 @@
+<% if(user){ %>
+    <ul class="uk-nav uk-nav-default">
+        <li class="uk-nav-header">Welcome Back <b><%= user.name %></b></li>
+        <li><a href="<%= rou.deleteAccount %>" class="uk-text-danger"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: minus-circle"></span>Delete Account</a></li>
+        <li class="uk-nav-divider"></li>
+        <li><a href="<%= rou.logout %>" class="uk-text-danger"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: sign-out"></span>Log Out</a></li>
+    </ul>
+<% }else{ %>
+    <ul class="uk-nav uk-nav-default">
+        <li class="uk-nav-header">Menu</li>
+        <li><a href="<%= rou.login %>"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: sign-in"></span>Login</a></li>
+        <li class="uk-nav-divider"></li>
+        <li><a href="<%= rou.register %>"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: plus-circle"></span> Create a account</a></li>
+    </ul>
+<% } %> 

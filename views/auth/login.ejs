@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('../layout/head.ejs') %>
+	</head>
+	<body class="uk-flex uk-flex-center uk-flex-middle uk-background-muted uk-height-viewport" data-uk-height-viewport>
+		<div class="uk-width-medium uk-padding-small">
+			<!-- login -->
+			<% for (const key in flash) { %>
+				<div class="uk-alert-<%= key %> uk-border-pill" uk-alert>
+					<a class="uk-alert-close" uk-close></a>
+					<p><%= flash[key] %></p>
+				</div>
+				<% } %>
+			<form class="toggle-class" action="<%= rou.login %>" method="post">
+				<fieldset class="uk-fieldset">
+					<div class="uk-margin-small">
+						<div class="uk-inline uk-width-1-1">
+							<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
+							<input name="email" class="uk-input uk-border-pill" required placeholder="Email" type="text">
+						</div>
+					</div>
+					<div class="uk-margin-small">
+						<div class="uk-inline uk-width-1-1">
+							<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
+							<input name="password" class="uk-input uk-border-pill" required placeholder="Password" type="password">
+						</div>
+					</div>
+					<div class="uk-margin-bottom">
+						<button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">LOG IN</button>
+					</div>
+				</fieldset>
+			</form>
+			<!-- /login -->
+
+			<!-- recover password -->
+			<form class="toggle-class" action="<%= rou.forget %>" method="post" hidden>
+				<div class="uk-margin-small">
+					<div class="uk-inline uk-width-1-1">
+						<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
+						<input name="email" class="uk-input uk-border-pill" placeholder="E-mail" required type="text">
+					</div>
+				</div>
+				<div class="uk-margin-bottom">
+					<button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">SEND PASSWORD</button>
+				</div>
+			</form>
+			<!-- /recover password -->
+			
+			<!-- action buttons -->
+			<div>
+				<div class="uk-text-center">
+					<a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade">Forgot your password?</a>
+					<a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" hidden><span data-uk-icon="arrow-left"></span> Back to Login</a>
+					<br><hr>
+					<a href="<%= rou.register %>" type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">Create an account</a>
+					<hr>
+					<a href="<%= rou.main %>"><span uk-icon="home"></span></a>
+				</div>
+			</div>
+			<!-- action buttons -->
+		</div>
+		
+		<!-- JS FILES -->
+		<%- include('../layout/script.ejs') %>
+	</body>
+</html>

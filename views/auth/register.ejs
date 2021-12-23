@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<%- include('../layout/head.ejs') %>
+</head>
+
+<body class="uk-flex uk-flex-center uk-flex-middle uk-background-muted uk-height-viewport" data-uk-height-viewport>
+	<div class="uk-width-medium uk-padding-small">
+		<!-- login -->
+		<% for (const key in flash) { %>
+			<div class="uk-alert-<%= key %> uk-border-pill" uk-alert>
+				<a class="uk-alert-close" uk-close></a>
+				<p><%= flash[key] %></p>
+			</div>
+			<% } %>
+		<form class="toggle-class" action="<%= rou.register %>" method="post">
+			<fieldset class="uk-fieldset">
+				<div class="uk-margin-small">
+					<div class="uk-inline uk-width-1-1">
+						<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
+						<input name="name" class="uk-input uk-border-pill" required placeholder="Full Name" type="text">
+					</div>
+				</div>
+				<div class="uk-margin-small">
+					<div class="uk-inline uk-width-1-1">
+						<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
+						<input name="email" class="uk-input uk-border-pill" required placeholder="Email" type="text">
+					</div>
+				</div>
+				<div class="uk-margin-small">
+					<div class="uk-inline uk-width-1-1">
+						<span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
+						<input name="password" class="uk-input uk-border-pill" required placeholder="Password" type="password">
+					</div>
+				</div>
+				<div class="uk-margin-bottom">
+					<button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">SIGN
+						UP</button>
+				</div>
+			</fieldset>
+		</form>
+		<ul>
+			<li>password limit: 5 char</li>
+		</ul>
+		<!-- /login -->
+
+		<!-- recover password -->
+		<!-- /recover password -->
+
+		<!-- action buttons -->
+		<div>
+			<div class="uk-text-center">
+				<hr>
+				<a href="<%= rou.login %>" type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">Log in</a>
+				<hr>
+				<a href="<%= rou.main %>"><span uk-icon="home"></span></a>
+			</div>
+		</div>
+		<!-- action buttons -->
+	</div>
+
+	<!-- JS FILES -->
+	<%- include('../layout/script.ejs') %>
+</body>
+
+</html>
