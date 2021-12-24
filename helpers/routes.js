@@ -1,3 +1,4 @@
+//useful routes
 rou = {
     main: '/',
     img: '/ImageProducts/',

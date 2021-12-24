@@ -5,18 +5,22 @@ const showCart = require('../helpers/products/showCart')
 
 const mainController = async (req, res) => {
 
-    //Find All Products
-    const products = await Products.find()
-    const categories = await Category.find()
+    try {
+        //Find All Products
+        const products = await Products.find()
+        const categories = await Category.find()
 
-    res.render('main', {
-        title: "Digikala | fast Shopping",
-        rou,
-        products,
-        categories,
-        user: req.user,
-        productsCart: req.user ? await showCart(req.user) : [""],
-    })
+        res.render('main', {
+            title: "Digikala | fast Shopping",
+            rou,
+            products,
+            categories,
+            user: req.user,
+            productsCart: req.user ? await showCart(req.user) : [""],
+        })
+    } catch (error) {
+        console.log(`\n---mainController.js---\n`, error)
+    }
 }
 
 module.exports = mainController

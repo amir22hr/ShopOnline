@@ -8,22 +8,27 @@ const mailSender = require('../../helpers/Auth/mailSender');
 
 const checkoutController = async (req, res) => {
 
-    if (req.query.id) {
+    try {
+        if (req.query.id) {
 
-        //render HTML
-        const html = await ejs.renderFile(path.join(__dirname, '../../views/mail/checkout.ejs'), {
-            title: "Thanks for buying from us",
-            list: await showCart(req.user)
-        })
+            //render HTML
+            const html = await ejs.renderFile(path.join(__dirname, '../../views/mail/checkout.ejs'), {
+                title: "Thanks for buying from us",
+                list: await showCart(req.user)
+            })
 
-        mailSender(req.user.email, 'checkout', html)
+            mailSender(req.user.email, 'checkout', html)
 
-        await Customers.findOneAndUpdate(
-            //req.query.id => user
-            { _id: req.query.id },
-            { carts: [] }
-        )
+            await Customers.findOneAndUpdate(
+                //req.query.id => user
+                { _id: req.query.id },
+                { carts: [] }
+            )
 
+            return res.status(302).redirect(rou.main)
+        }
+    } catch (error) {
+        console.log(`\n---checkoutController.js---\n`, error)
         return res.status(302).redirect(rou.main)
     }
 }

@@ -7,16 +7,20 @@ const breakTimer = require('../../helpers/breakTimer')
 
 const forgetPasswordController = async (req, res) => {
 
-    var email = req.body.email
+    var email = await req.body.email
 
     try {
-        //input,res,rou
-        breakTimer(email, res, rou.login)
-
         if (email) {
+
             const customer = await Customers.findOne({
                 email
             })
+
+            // check if email has exist
+            if (customer == null) {
+                req.flash('primary', "An email will be sent if there is one")
+                return res.status(302).redirect(rou.login)
+            }
 
             if (customer.valid === true) {
                 //generate password
@@ -37,9 +41,13 @@ const forgetPasswordController = async (req, res) => {
                 throw new Error("Please Verify Account, Validation sent to your email.")
             }
         }
+        else{
+            throw new Error()
+        }
+
     } catch (error) {
         console.log(`\n---forgetPasswordController.js---\n`, error)
-        req.flash('danger', await error.toString())
+        req.flash('danger', "SomeThing Wrong!")
         return res.status(302).redirect(rou.login)
     }
 
