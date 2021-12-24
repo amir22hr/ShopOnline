@@ -8,8 +8,8 @@ rou = {
     register: '/auth/register',
     forget: '/auth/forget',
     valid: '/auth/valid',
-    logout: '/logout',
-    deleteAccount: '/deleteAccount',
+    logout: '/user/logout',
+    deleteAccount: '/user/deleteAccount',
     //Products
     add: '/add',
     delete: '/delete',

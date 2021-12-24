@@ -9,6 +9,8 @@ const loginController = require('../controllers/auth/loginController')
 const registerController = require('../controllers/auth/registerController')
 const forgetPasswordController = require('../controllers/auth/forgetPasswordController')
 const validController = require('../controllers/auth/validController')
+const logoutController = require('../controllers/auth/logoutController')
+const deleteAccountController = require('../controllers/auth/deleteAccountController')
 
 //Login 
 router.get('/login', loginController.get)
@@ -20,5 +22,9 @@ router.post('/register', body('email').isEmail(), body('password').isLength({ mi
 router.post('/forget', forgetPasswordController)
 //Validation
 router.get('/valid', validController)
+//Logout
+router.get('/logout', logoutController)
+//Delete Account
+router.get('/deleteAccount', deleteAccountController)
 
 module.exports = router

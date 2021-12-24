@@ -16,6 +16,4 @@ router.get('/delete', deleteCartController)
 router.get('/checkout', checkoutController)
 
 
-
-
 module.exports = router
