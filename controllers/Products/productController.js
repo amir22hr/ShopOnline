@@ -1,8 +1,6 @@
 const rou = require('../../helpers/routes')
 const Products = require('../../models/products')
 const Customers = require('../../models/customers')
-const showCart = require('../../helpers/products/showCart')
-const addCart = require('../../helpers/products/addCart')
 
 const productController = async (req, res) => {
 
@@ -23,13 +21,8 @@ const productController = async (req, res) => {
             product,
             user: req.user,
             exist: req.user ? exist : "",
-            // categories,
-            // productsCart: await showCart(req.user),
         })
     }
-
-    // return res.status(302).redirect(rou.main)
-
 }
 
 module.exports = productController
