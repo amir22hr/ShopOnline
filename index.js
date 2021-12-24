@@ -2,7 +2,6 @@
 require('dotenv').config({ path: './variables.env' })
 const express = require('express')
 const flash = require('connect-flash');
-const cookieParser = require('cookie-parser')
 const session = require('express-session')
 const passport = require('passport')
 
