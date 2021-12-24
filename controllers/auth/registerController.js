@@ -19,28 +19,32 @@ const post = async (req, res) => {
 
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        req.flash('danger',`${errors.errors[0].msg} | ${errors.errors[0].param}`)
+        req.flash('danger', `${errors.errors[0].msg} | ${errors.errors[0].param}`)
         return res.status(400).redirect(rou.register)
     }
 
     try {
-        //Check Token Already Exist ?
         const token = await tokenCrypto(req.body.email, req.body.name)
+        //Check Token Already Exist ?
+
         //true => redirect
         try {
             const user = await Customers.findOne({ token })
             if (user.valid === false) {
-                await req.flash('warning', 'Check your Email and Verify Account')
+                await req.flash('warning', "Check Your Email And Verify Account, If you don't receive the email, try to forget the password.")
                 res.status(302).redirect(rou.login)
             }
             else {
                 await req.flash('warning', 'User Already Exist !')
                 res.status(302).redirect(rou.login)
             }
-        } catch { }
+        } catch (error) {
+            console.log(`\n---registerController.js---1\n`, error)
+        }
+
         //false => create user
-        //import to database
         const hash = await hashPassword(req.body.password)
+        //import to database
         await Customers.create({
             name: req.body.name,
             email: req.body.email,
@@ -53,18 +57,17 @@ const post = async (req, res) => {
             title: "Email Validation",
             valid: `http://localhost:${process.env.PORT}${rou.valid}?token=${token}`
         })
-
         //Send Mail
         await mailSender(req.body.email, "Activation email", html)
 
+        //flash Message
         await req.flash('primary', "Check Mail to Validation")
         res.status(302).redirect(rou.login)
 
-        //error
     } catch (error) {
+        console.log(`\n---registerController.js---2\n`, error)
         await req.flash('warning', 'Check your Inputs')
         res.status(302).redirect(rou.register)
-        console.log(error)
     }
 }
 

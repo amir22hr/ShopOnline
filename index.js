@@ -17,7 +17,11 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: false }))
 app.use(session({
-    cookie: { maxAge: 60000 },
+    // 1min = 60000
+    // 5min = 300000
+    // 30min = 1800000
+    // 1h = 3600000
+    cookie: { maxAge: 300000 },
     secret: process.env.SESSION_SECRET_KEY,
     resave: false,
     saveUninitialized: false,

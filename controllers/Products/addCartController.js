@@ -7,7 +7,7 @@ const addCart = require('../../helpers/products/addCart')
 const addCartController = async (req, res) => {
 
     if (req.query.id) {
-        await addCart(req.user,req.query.id)
+        await addCart(req.user, req.query.id, res)
     }
 
     // Find All Products

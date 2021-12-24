@@ -13,7 +13,7 @@ const post = passport.authenticate('local', {
     successRedirect: rou.main,
     failureRedirect: rou.login,
     failureFlash: true,
- })
+})
 
 module.exports = {
     get,

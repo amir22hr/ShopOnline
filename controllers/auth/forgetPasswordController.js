@@ -2,12 +2,18 @@ const rou = require('../../helpers/routes')
 var generator = require('generate-password');
 const Customers = require('../../models/customers')
 const mailSender = require('../../helpers/Auth/mailSender');
+const breakTimer = require('../../helpers/breakTimer')
+
 
 const forgetPasswordController = async (req, res) => {
-    var email = await req.body.email
-    if (email) {
 
-        try {
+    var email = req.body.email
+
+    try {
+        //input,res,rou
+        breakTimer(email, res, rou.login)
+
+        if (email) {
             const customer = await Customers.findOne({
                 email
             })
@@ -30,12 +36,13 @@ const forgetPasswordController = async (req, res) => {
                 await mailSender(email, "Activation email", html)
                 throw new Error("Please Verify Account, Validation sent to your email.")
             }
-
-        } catch (err) {
-            req.flash('danger', await err.toString())
-            return res.status(302).redirect(rou.login)
         }
+    } catch (error) {
+        console.log(`\n---forgetPasswordController.js---\n`, error)
+        req.flash('danger', await error.toString())
+        return res.status(302).redirect(rou.login)
     }
+
 }
 
 module.exports = forgetPasswordController
