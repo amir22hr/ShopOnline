@@ -9,7 +9,7 @@ GMAIL=example@gmail.com
 GMAIL_PASS='examplePassword'
 
 for login A user by default:
-janoka1371@xtrempro.com
+digikala@mailinator.com
 12345
 ****************************************
 for gmail:
