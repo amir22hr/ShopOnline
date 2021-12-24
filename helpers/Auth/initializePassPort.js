@@ -3,8 +3,6 @@ const rou = require('../../helpers/routes')
 const Customers = require('../../models/customers')
 const bcrypt = require('bcrypt')
 const mailSender = require('../../helpers/Auth/mailSender')
-const ejs = require('ejs')
-const path = require('path');
 
 const initialize = (app, passport) => {
 
