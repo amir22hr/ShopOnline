@@ -3,17 +3,29 @@ const date = require('date-and-time');
 
 //Schema
 const customersSchema = new mongoose.Schema({
-    name: String,
-    email: String,
-    password: String,
+    name: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
     joinDate: {
         type: String,
         default: date.format(new Date(), 'YYYY/MM/DD'),
     },
-    token: String,
+    token: {
+        type: String,
+        required: true,
+    },
     valid: {
         type: Boolean,
-        default: false
+        default: false,
     },
     carts: {
         type: Array,
