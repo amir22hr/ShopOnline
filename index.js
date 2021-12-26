@@ -1,8 +1,9 @@
 //define
 require('dotenv').config({ path: './variables.env' })
 const express = require('express')
-const flash = require('connect-flash');
+const flash = require('connect-flash')
 const session = require('express-session')
+const MongoStore = require('connect-mongo')
 const passport = require('passport')
 
 require('./config/db')
@@ -16,15 +17,21 @@ const port = process.env.PORT
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: false }))
+//check Session
 app.use(session({
-    // 1min = 60000
-    // 5min = 300000
-    // 30min = 1800000
-    // 1h = 3600000
-    cookie: { maxAge: 300000 },
+    // 1min = 60000 ms
+    // 5min = 300000 ms
+    // 30min = 1800000 ms
+    // 1h = 3600000 ms
+    // 2days = 172800000 ms
+    cookie: { maxAge: 172800000 },
     secret: process.env.SESSION_SECRET_KEY,
     resave: false,
     saveUninitialized: false,
+    store: MongoStore.create({
+        mongoUrl: process.env.MONGO_ID,
+        touchAfter: 2 * 86400 // time period in seconds //2days
+    })
 }));
 app.use(flash());
 initializePassPort(app, passport)
