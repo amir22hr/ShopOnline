@@ -1,22 +1,14 @@
-PORT=5000
-# MongoDB
-MONGO_ID=mongodb://localhost/ShopOnline
-# Session
-SESSION_SECRET_KEY=$2b$10$nK01e4pIKHGm2amJAb3rcOAQXHiTS08QNuICrtr6fXnEiwYopYQWu
-SALT_ROUNDS=10
-# Gmail
-GMAIL=example@gmail.com
-GMAIL_PASS='examplePassword'
+1) It's easy, just look at the variables.sample.env
+2) Rename to variables.env
+3) Paste the required items
+4) Have Fun :)
 
 for login A user by default:
 digikala@mailinator.com
 12345
+
 ****************************************
-for gmail:
-You need an email without two-step verification
-You must turn on [Less secure app access] by this link
-https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4O8CPde1CxaqdP5PJCiSUFnIudVOloCzDLabztu_ICDwZN2A3ecqFrRT0pUGP-gxQgswEhvUu4IMgtIB83LdTDbwYyqOw
-****************************************
+
 For Gazar Teacher: :) ***
 Thank you very much for your useful course.
 I think I have made significant progress.

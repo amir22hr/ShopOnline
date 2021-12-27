@@ -34,7 +34,7 @@
 					<ul class="uk-subnav" data-uk-margin>
 						<li class="uk-visible@s"><a href="<%= rou.main %>">Home</a></li>
 						<li class="uk-visible@s">
-							<a href="#" data-uk-icon="icon:cart"></a>
+							<%- include('layout/countCart.ejs') %> 
 							<div class="drop-nav drop-comments uk-dropdown"
 								data-uk-dropdown="mode: click; offset: 20;animation: uk-animation-slide-bottom-small; duration: 150">
 								<ul class="uk-child-width-expand" data-uk-tab="animation: uk-animation-fade">

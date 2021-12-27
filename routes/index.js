@@ -14,12 +14,12 @@ const Products = require('../routes/products')
 //Main
 router.get('/', mainController)
 //Product
-router.get('/product/:id', productController)
+router.get('/products/:id', productController)
 //Authentication
 router.use('/auth', checkAuth.isLoggedIn, authRoute)
 //User
 router.use('/user', checkAuth.checkAuthenticated, userRoute)
 //Products Tools
-router.use('/', checkAuth.checkAuthenticated, Products)
+router.use('/product', checkAuth.checkAuthenticated, Products)
 
 module.exports = router

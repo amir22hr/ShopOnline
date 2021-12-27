@@ -1,5 +1,7 @@
 const mongoose = require('mongoose')
-const date = require('date-and-time');
+const findOrCreate = require('mongoose-findorcreate')
+const generator = require('generate-password')
+const date = require('date-and-time')
 
 //Schema
 const customersSchema = new mongoose.Schema({
@@ -13,7 +15,10 @@ const customersSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: true
+        default: generator.generate({
+            length: 20,
+            numbers: true
+        })
     },
     joinDate: {
         type: String,
@@ -21,7 +26,7 @@ const customersSchema = new mongoose.Schema({
     },
     token: {
         type: String,
-        required: true,
+        required: true
     },
     valid: {
         type: Boolean,
@@ -32,5 +37,8 @@ const customersSchema = new mongoose.Schema({
         required: false
     },
 })
+
+//add findOrCreate to model
+customersSchema.plugin(findOrCreate);
 
 module.exports = mongoose.model("customers", customersSchema)

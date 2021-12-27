@@ -31,8 +31,11 @@
     "express-validator": "^6.14.0",
     "generate-password": "^1.7.0",
     "mongoose": "^6.1.2",
+    "mongoose-findorcreate": "^3.0.0",
     "nodemailer": "^6.7.2",
     "passport": "^0.5.2",
+    "passport-github2": "^0.1.12",
+    "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0"
   }
 }

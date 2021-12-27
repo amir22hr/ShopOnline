@@ -14,8 +14,8 @@ const initializePassPort = require('./helpers/Auth/initializePassPort');
 //configs
 const app = express()
 const port = process.env.PORT
-app.set('view engine', 'ejs')
 app.use(express.static('public'))
+app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
 //check Session
 app.use(session({
@@ -30,13 +30,17 @@ app.use(session({
     saveUninitialized: false,
     store: MongoStore.create({
         mongoUrl: process.env.MONGO_ID,
-        touchAfter: 2 * 86400 // time period in seconds //2days
+        touchAfter: 2 * 86400,// time period in seconds //2days
+        autoRemove: 'native',
+        
     })
 }));
 app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
 initializePassPort(app, passport)
 
-//MiddleWares
+// MiddleWares
 app.use('/', router)
 
 //handlerErrors

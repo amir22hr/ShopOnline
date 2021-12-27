@@ -8,13 +8,20 @@ rou = {
     register: '/auth/register',
     forget: '/auth/forget',
     valid: '/auth/valid',
+    //github
+    github: '/auth/github',
+    githubCallback: '/auth/github/callback',
+    //google
+    google: '/auth/google',
+    googleCallback: '/auth/google/callback',
+    //Products
+    add: '/product/add',
+    delete: '/product/delete',
+    checkout: '/product/checkout',
+    product: '/products/',
+    //-user
     logout: '/user/logout',
     deleteAccount: '/user/deleteAccount',
-    //Products
-    add: '/add',
-    delete: '/delete',
-    checkout: '/checkout',
-    product: '/product/'
 }
 
 module.exports = rou

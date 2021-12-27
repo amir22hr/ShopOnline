@@ -1,8 +1,8 @@
-const rou = require('../../helpers/routes');
+const rou = require('../../helpers/routes')
 
 const logoutController = async (req, res) => {
-
     try {
+
         await req.logout();
         return res.redirect(rou.main);
     } catch (error) {
