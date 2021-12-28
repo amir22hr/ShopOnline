@@ -7,9 +7,10 @@
 1) It's easy, just look at the variables.sample.env
 2) Rename to variables.env
 3) Paste the required items
-4) npm install
-5) npm start
-6) Have Fun :)
+4) run mongoDB
+5) npm install
+6) npm start
+7) Have Fun :)
 
 for login A user by default:
 digikala@mailinator.com
