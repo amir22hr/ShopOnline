@@ -7,7 +7,7 @@
 1) It's easy, just look at the variables.sample.env
 2) Rename to variables.env
 3) Paste the required items
-4) run mongoDB
+4) run mongoDB server
 5) npm install
 6) npm start
 7) Have Fun :)
