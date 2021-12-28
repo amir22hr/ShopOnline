@@ -8,9 +8,10 @@
 2) Rename to variables.env
 3) Paste the required items
 4) run mongoDB server
-5) npm install
-6) npm start
-7) Have Fun :)
+5) import *.json files to the database from the MongoDB folder
+6) npm install
+7) npm start
+8) Have Fun :)
 
 for login A user by default:
 digikala@mailinator.com
