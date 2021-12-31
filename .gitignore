@@ -1,2 +1,7 @@
 node_modules
-/variables.env
+variables.env
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
