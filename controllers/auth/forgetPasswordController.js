@@ -1,9 +1,7 @@
 const rou = require('../../helpers/routes')
 var generator = require('generate-password');
 const Customers = require('../../models/customers')
-const mailSender = require('../../helpers/Auth/mailSender');
-const breakTimer = require('../../helpers/breakTimer')
-
+const mailSender = require('../../helpers/Auth/mailSender')
 
 const forgetPasswordController = async (req, res) => {
 
